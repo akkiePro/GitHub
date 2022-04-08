@@ -1,0 +1,32 @@
+Push project on git:
+Steps:
+1) Go to github.com
+2) Select green button "New".
+3) Give repository name
+	for example, "JDBC"
+4) Click on "Create repository"
+5) Copy clone link
+6) Create an empty folder for local repository (CTRL+SHIFT+N)
+7) Open cmd in that folder
+8) Type following:
+		=> git clone <paste_link_which_you_copied_in_5th_step>
+   Press ENTER.
+9) Now you have an folder created. (JDBC in our case)
+10) in cmd, go to that folder...
+		=> cd JDBC (in our case)
+
+HINT : You can check that the folder is initialized with git OR not by enabling hidden items and check there must be a folder named ".git".
+
+11) Now you can modify your changes.
+	like, here I'm pasting JDBC project into JDBC folder which is named "TeluskoJDBC" where .git folder is visible.
+12) Now in cmd, check for status...
+		=> git status
+	You'll find that the folder(TeluskoJDBC) you added will show in red colour.
+13) Next command to add file in local repo is...
+		=> git add .
+
+	HINT : check for status(git status), everything will be shown in green colour.
+14) commit them
+		=> git commit -m "message you want to share with commit"
+15) push all changes in remote repository.
+		=> git push origin
